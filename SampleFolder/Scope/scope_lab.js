@@ -15,8 +15,8 @@ console.log(globalVar); // Output: "I'm a global variable"
 console.log(globalLet); // Output: "I'm also global, but scoped with let"
 console.log(globalConst); // Output: "I'm a global constant"
 //Block Scope
-console.log(blockVar);
-console.log(blockLet);
+//console.log(blockVar);
+//console.log(blockLet);
 function show(){
     var functionVar = "I'm a block-scoped var";
     let functionLet = "I'm a block-scoped let";
@@ -24,6 +24,20 @@ function show(){
     }
     show();
     
-    console.log(functionVar); // Throws ReferenceError
-    console.log(functionLet); // Throws ReferenceError
-    console.log(functionConst); // Throws ReferenceError
+    //console.log(functionVar); // Throws ReferenceError
+    //console.log(functionLet); // Throws ReferenceError
+    //console.log(functionConst); // Throws ReferenceError
+{
+    let test1 = 3
+    const test2 = 2
+    var test3 = 1
+
+    test1 = 1;
+    //test2 = 3;
+    test3 = 4;
+
+    console.log(test1)
+    console.log(test2)
+    console.log(test3)
+
+}
