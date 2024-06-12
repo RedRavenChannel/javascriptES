@@ -6,6 +6,7 @@ function submitFeedback() {
     const job = document.getElementById('job').value;
     const designation = document.getElementById('designation').value;
     const productType = document.getElementById('productType').value;
+    const userExperinces = document.getElementById('userExperinceText').value;
     const feedback = document.getElementById('feedbackText').value;
     alert('Thank you for your valuable feedback')
     document.getElementById('userInfo').style.display = 'block';
@@ -17,6 +18,7 @@ function submitFeedback() {
     document.getElementById('userDesignation').innerHTML = designation;
     document.getElementById('userProductChoice').innerHTML = productType;
     document.getElementById('userFeedback').innerHTML = feedback;
+    document.getElementById('userExperince').innerHTML = userExperinces;
 
     document.getElementById('userInfo').style.display = 'block';
 
